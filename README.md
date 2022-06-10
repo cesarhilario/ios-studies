@@ -1,5 +1,5 @@
 # ios-studies
-Mono repo do group my studies of iOS
+Mono repo to group my studies of iOS
 
 ## Projects
 1) poc-geolocation: Proof of conceot that retrieve the geolocation (Swift, Storyboard)
