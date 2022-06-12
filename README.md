@@ -1,5 +1,5 @@
 # ios-studies
-Mono repo to group my studies of iOS
+Monorepo to group my studies of iOS
 
 ## Projects
 1) poc-swfit-geolocation: Proof of concept that retrieve the geolocation with Swift using Storyboard to UI.
