@@ -5,7 +5,7 @@ Document-Based App that allow create memes 🥳
 ### Demo
 
 <div align="center">
-    <img src="./docs/MemeCreatorDemo.gif" width="250" />
+    <img src="https://github.com/cesarhilario/ios-studies/blob/master/raywenderlich/MemeMaker/docs/MemeCreatorDemo.gif" width="250" />
 </div>
 
 - Swift
