@@ -7,7 +7,7 @@ struct MemeTextField: View {
     TextField(text, text: $text)
       .multilineTextAlignment(.center)
       .lineLimit(nil)
-      .foregroundColor(.black)
+      .foregroundColor(.white)
       .font(Font.system(size: 25, weight: .bold))
       .textCase(.uppercase)
   }
