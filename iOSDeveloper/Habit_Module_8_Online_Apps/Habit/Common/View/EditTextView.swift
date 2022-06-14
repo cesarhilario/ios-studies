@@ -1,10 +1,3 @@
-//
-//  EditTextView.swift
-//  Habit
-//
-//  Created by Tiago Aguiar on 10/05/21.
-//
-
 import SwiftUI
 
 struct EditTextView: View {

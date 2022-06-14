@@ -1,10 +1,3 @@
-//
-//  WebService.swift
-//  Habit
-//
-//  Created by Tiago Aguiar on 14/05/21.
-//
-
 import Foundation
 
 enum WebService {

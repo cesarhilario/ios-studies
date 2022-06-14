@@ -1,10 +1,3 @@
-//
-//  SignInErrorResponse.swift
-//  Habit
-//
-//  Created by Tiago Aguiar on 19/05/21.
-//
-
 import Foundation
 
 struct SignInErrorResponse: Decodable {

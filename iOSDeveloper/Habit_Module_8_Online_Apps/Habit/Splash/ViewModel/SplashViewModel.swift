@@ -1,10 +1,3 @@
-//
-//  SplashViewModel.swift
-//  Habit
-//
-//  Created by Tiago Aguiar on 15/04/21.
-//
-
 import SwiftUI
 
 class SplashViewModel: ObservableObject {

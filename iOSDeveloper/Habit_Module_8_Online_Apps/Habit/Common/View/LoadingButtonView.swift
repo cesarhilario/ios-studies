@@ -1,10 +1,3 @@
-//
-//  LoadingButtonView.swift
-//  Habit
-//
-//  Created by Tiago Aguiar on 11/05/21.
-//
-
 import SwiftUI
 
 struct LoadingButtonView: View {

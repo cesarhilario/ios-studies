@@ -1,10 +1,3 @@
-//
-//  String+Extension.swift
-//  Habit
-//
-//  Created by Tiago Aguiar on 11/05/21.
-//
-
 import Foundation
 
 extension String {

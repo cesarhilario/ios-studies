@@ -1,10 +1,3 @@
-//
-//  SignUpViewRouter.swift
-//  Habit
-//
-//  Created by Tiago Aguiar on 07/05/21.
-//
-
 import SwiftUI
 
 enum SignUpViewRouter {
