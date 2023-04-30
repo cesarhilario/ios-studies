@@ -19,8 +19,9 @@ class CustomTableViewCell: UITableViewCell {
     
     @IBOutlet weak var salaryLabel: UILabel!
     
-    
     @IBOutlet weak var heartButton: UIButton!
+    
+    var viewModel: CustomCellViewModel?
     
     override func awakeFromNib() {
         super.awakeFromNib();
@@ -28,14 +29,16 @@ class CustomTableViewCell: UITableViewCell {
         self.imageUserImageView.layer.cornerRadius =  self.imageUserImageView.frame.height / 2
     }
     
-    func setupCell(setup: Person) {
-        self.imageUserImageView.image = setup.imageUser;
-        self.nameLabel.text = "Nome: \(setup.name)";
-        self.professionLabel.text = "Profissão: \(setup.profession)";
-        self.salaryLabel.text = "Salário: \(setup.salary)"
-        self.ageLabel.text = "Idade: \(setup.age)"
+    func setupCell(user: User) {
+        self.viewModel = CustomCellViewModel(data: user);
         
-        if (setup.isEnabledHeart) {
+        self.imageUserImageView.image = self.viewModel?.getUserImage
+        self.nameLabel.text = self.viewModel?.getName
+        self.professionLabel.text = self.viewModel?.getProfession
+        self.salaryLabel.text = self.viewModel?.getSalary
+        self.ageLabel.text = self.viewModel?.getAge
+        
+        if (self.viewModel?.getIsEnabledHeart ?? false) {
             self.heartButton.tintColor = .red;
         } else {
             self.heartButton.tintColor = .blue

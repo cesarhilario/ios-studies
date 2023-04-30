@@ -8,19 +8,19 @@
 import UIKit
 
 class ViewModel {
-    private var listUser: [Person] = [];
+    private var listUser: [User] = [];
     
     init() {
         self.configArrayUser()
     }
     
     private func configArrayUser() {
-        self.listUser.append(Person(name: "Caio", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
-        self.listUser.append(Person(name: "Fabricio", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
-        self.listUser.append(Person(name: "Alencar", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
-        self.listUser.append(Person(name: "Jorge", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
-        self.listUser.append(Person(name: "Robson", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
-        self.listUser.append(Person(name: "Fabricio", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
+        self.listUser.append(User(name: "Caio", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
+        self.listUser.append(User(name: "Fabricio", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
+        self.listUser.append(User(name: "Alencar", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
+        self.listUser.append(User(name: "Jorge", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
+        self.listUser.append(User(name: "Robson", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
+        self.listUser.append(User(name: "Fabricio", age: 30, profession: "Develper IOS", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnabledHeart: true));
     }
     
     // Computed Variable
@@ -28,7 +28,7 @@ class ViewModel {
         return self.listUser.count;
     }
     
-    public func loadCurrentUser(indexPath: IndexPath) -> Person {
+    public func loadCurrentUser(indexPath: IndexPath) -> User {
         return self.listUser[indexPath.row];
     }
     

@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as? CustomTableViewCell
-        cell?.setupCell(setup: self.viewModel.loadCurrentUser(indexPath: indexPath))
+        cell?.setupCell(user: self.viewModel.loadCurrentUser(indexPath: indexPath))
         return cell ?? UITableViewCell()
     }
     
