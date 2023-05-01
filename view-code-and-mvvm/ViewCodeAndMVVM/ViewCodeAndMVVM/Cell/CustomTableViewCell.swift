@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CustomTableViewCellDelegate: AnyObject {
+    func tappedHeartButton(_ user: User)
+}
+
 class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageUserImageView: UIImageView!
@@ -21,7 +25,13 @@ class CustomTableViewCell: UITableViewCell {
     
     @IBOutlet weak var heartButton: UIButton!
     
-    var viewModel: CustomCellViewModel?
+    var viewModel: CustomCellViewModel?;
+    
+    private weak var delegate: CustomTableViewCellDelegate?
+    
+    public func delegate(delegate: CustomTableViewCellDelegate) {
+        self.delegate = delegate;
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib();
@@ -45,7 +55,16 @@ class CustomTableViewCell: UITableViewCell {
         }
     }
     
-    @IBAction func tappedHeartButton(_ sender: Any) {
-        self.heartButton.tintColor = .red;
+    @IBAction func tappedHeartButton(_ sender: UIButton) {
+        
+        guard let _viewModel = viewModel else { return };
+        
+        if (_viewModel.getIsEnabledHeart) {
+            self.heartButton.tintColor = .blue;
+        } else {
+            self.heartButton.tintColor = .red
+        }
+        
+        self.delegate?.tappedHeartButton(_viewModel.getUser);
     }
 }

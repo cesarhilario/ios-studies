@@ -41,7 +41,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salário: R$ 10.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dfq-Hf-1vN">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salário: R$ 10.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dfq-Hf-1vN">
                         <rect key="frame" x="152" y="115" width="162" height="21"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -54,7 +54,7 @@
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="♡"/>
                         <connections>
-                            <action selector="tappedHeartButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gPq-EP-GVL"/>
+                            <action selector="tappedHeartButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aD4-Rr-8lJ"/>
                         </connections>
                     </button>
                 </subviews>
