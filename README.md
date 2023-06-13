@@ -9,4 +9,4 @@ Monorepo to group my iOS studies
    a) **Habit_Module_8_Online_Apps**: until 8th module (with convetional Swift HTTP). <br/>
    b) **Habit** (doing): after 8th module -> requests with Combine. <br/>
 3. **MemeMaker**: Meme Document-Based App for iOS and macOS that generates memes. 😀
-4. **eggplant-brownie**: Simple project to know Storyboard.
+4. **eggplant-brownie**: Simple project to learn Storyboard.
